@@ -21,4 +21,16 @@ Acreditamos ser uma ideia inovadora e que chamará muitas pessoas de diversas id
 
 ## Como Executar o Projeto ?
 
+### Pré-requisitos
 
+- [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet/6.0)
+- [Banco de Dados Oracle](https://www.oracle.com/database/)
+- [Visual Studio 2022](https://visualstudio.microsoft.com/vs/)
+
+### Mostraremos o Passo a Passo!!!
+
+1. **Clone o repositório:**
+   abra o Bash
+   git clone https://github.com/seu-usuario/CleanWaveAPI.git
+   cd CleanWaveAPI
+   
