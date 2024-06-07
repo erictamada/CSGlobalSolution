@@ -16,14 +16,14 @@ namespace GlobalSolutionCS.Controllers
 			_context = context;
 		}
 
-		// GET: api/Usuarios
+		// Método GET -> api/Usuarios
 		[HttpGet]
 		public async Task<ActionResult<IEnumerable<Usuario>>> GetUsuarios()
 		{
 			return await _context.Usuarios.Include(u => u.Pontuacoes).ToListAsync();
 		}
 
-		// GET: api/Usuarios/{id}
+		// Método GET -> api/Usuarios/{id}
 		[HttpGet("{id}")]
 		public async Task<ActionResult<Usuario>> GetUsuario(int id)
 		{
@@ -37,7 +37,7 @@ namespace GlobalSolutionCS.Controllers
 			return usuario;
 		}
 
-		// POST: api/Usuarios
+		// Método POST -> api/Usuarios
 		[HttpPost]
 		public async Task<ActionResult<Usuario>> PostUsuario(Usuario usuario)
 		{
@@ -48,7 +48,7 @@ namespace GlobalSolutionCS.Controllers
 
 			foreach (var pontos in usuario.Pontuacoes)
 			{
-				pontos.Usuario = usuario;  // Vincula a pontuação ao usuário
+				pontos.Usuario = usuario;  // Aqui vinculamos a pontuacao ao usuario
 			}
 
 			_context.Usuarios.Add(usuario);
@@ -57,7 +57,7 @@ namespace GlobalSolutionCS.Controllers
 			return CreatedAtAction(nameof(GetUsuario), new { id = usuario.Id }, usuario);
 		}
 
-		// PUT: api/Usuarios/{id}
+		// Método PUT -> api/Usuarios/{id}
 		[HttpPut("{id}")]
 		public async Task<IActionResult> PutUsuario(int id, Usuario usuario)
 		{
@@ -87,7 +87,7 @@ namespace GlobalSolutionCS.Controllers
 			return NoContent();
 		}
 
-		// DELETE: api/Usuarios/{id}
+		// Método DELETE -> api/Usuarios/{id}
 		[HttpDelete("{id}")]
 		public async Task<IActionResult> DeleteUsuario(int id)
 		{
