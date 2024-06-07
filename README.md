@@ -30,7 +30,17 @@ Acreditamos ser uma ideia inovadora e que chamará muitas pessoas de diversas id
 ### Mostraremos o Passo a Passo!!!
 
 1. **Clone o repositório:**
-   abra o Bash
-   git clone https://github.com/seu-usuario/CleanWaveAPI.git
-   cd CleanWaveAPI
    
+   abra o Bash
+   
+   git clone https://github.com/seu-usuario/CleanWaveAPI.git
+   
+   cd CleanWaveAPI
+
+2. **Configuração do Banco de Dados:**
+
+  Certifique-se de que o banco de dados Oracle está instalado e em execução, no nosso caso, usamos o SQLDEVELOPER para a integração ao database.
+
+  Crie um usuário e um esquema para o projeto.
+
+
