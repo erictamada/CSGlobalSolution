@@ -45,7 +45,7 @@ Acreditamos ser uma ideia inovadora e que chamará muitas pessoas de diversas id
 
 3. **Configuração da String de Conexão ao Banco de Dados da Oracle**
 
-   Edite o arquivo appsettings.json com as credenciais do banco de dados Oracle:
+   Vamos editar o arquivo appsettings.json com as credenciais do banco de dados Oracle:
    
       {
         "ConnectionStrings": {
@@ -59,5 +59,87 @@ Acreditamos ser uma ideia inovadora e que chamará muitas pessoas de diversas id
         },
         "AllowedHosts": "*"
       }
+
+4. **Agora vamos aplicar as Migrations!**
+   
+      No Package Manager Console do Visual Studio, vamos executar os seguintes comandos:
+   
+      Add-Migration InitialCreate
+   
+      Update-Database
+
+5. **Por fim executaremos a aplicação :)**
+
+     No Visual Studio, selecionaremos a opção de execução 'CleanWaveAPI'.
+
+     Assim, a nossa aplicação será iniciada abrindo o Swagger no 'https://localhost:5001/swagger'.
+
+
+## Estrutura do Projeto CleanWave
+
+    - Controllers: Onde estará os controladores da API.
+
+    - Models: Onde estará os modelos de dados.
+
+    - Data: Onde estará o contexto do Banco de Dados e as configurações de Migrações.
+
+
+### Endpoints da API
+
+    ##Usuários:
+    
+    - GET /api/Usuarios - Retorna todos os usuários.
+    
+    - GET /api/Usuarios/{id} - Retorna um usuário específico pelo ID.
+    
+    - POST /api/Usuarios - Cria um novo usuário.
+    
+    - PUT /api/Usuarios/{id} - Atualiza um usuário existente.
+    
+    - DELETE /api/Usuarios/{id} - Exclui um usuário específico pelo ID.
+
+    ##Lixeiras:
+
+    - GET /api/Lixeiras - Retorna todas as lixeiras.
+    
+    - GET /api/Lixeiras/{id} - Retorna uma lixeira específica pelo ID.
+    
+    - POST /api/Lixeiras - Cria uma nova lixeira.
+    
+    - PUT /api/Lixeiras/{id} - Atualiza uma lixeira existente.
+    
+    - DELETE /api/Lixeiras/{id} - Exclui uma lixeira específica pelo ID.
+
+    ##Pontos:
+
+    - GET /api/Lixeiras - Retorna todas as lixeiras.
+    
+    - GET /api/Lixeiras/{id} - Retorna uma lixeira específica pelo ID.
+    
+    - POST /api/Lixeiras - Cria uma nova lixeira.
+    
+    - PUT /api/Lixeiras/{id} - Atualiza uma lixeira existente.
+    
+    - DELETE /api/Lixeiras/{id} - Exclui uma lixeira específica pelo ID.
+
+    ##Itens da Lixeira:
+
+    - GET /api/ItensLixeira - Retorna todos os itens das lixeiras.
+    
+    - GET /api/ItensLixeira/{id} - Retorna um item específico pelo ID.
+    
+    - POST /api/ItensLixeira - Cria um novo item.
+    
+    - PUT /api/ItensLixeira/{id} - Atualiza um item existente.
+    
+    - DELETE /api/ItensLixeira/{id} - Exclui um item específico pelo ID.
+
+
+###Conclusão
+
+    O projeto CleanWave API proporciona uma solução completa para a gestão de lixeiras inteligentes, incentivando a reciclagem e a conscientização ambiental. Com uma arquitetura bem definida, integração com banco de dados Oracle e documentação abrangente via Swagger, a aplicação está pronta para ser      utilizada e expandida conforme necessário.
+
+    
+
 
 
