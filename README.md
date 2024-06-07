@@ -144,8 +144,10 @@ Acreditamos ser uma ideia inovadora e que chamará muitas pessoas de diversas id
 
 ### Conclusão
 
-    O projeto CleanWave API proporciona uma solução completa para a gestão de lixeiras inteligentes, incentivando a reciclagem e a conscientização ambiental. 
-    Com uma arquitetura bem definida, integração com banco de dados Oracle e documentação abrangente via Swagger, a aplicação está pronta para ser utilizada e expandida conforme necessário.
+    O projeto CleanWave API proporciona uma solução completa para a gestão de 
+    lixeiras inteligentes, incentivando a reciclagem e a conscientização ambiental. 
+    Com uma arquitetura bem definida, integração com banco de dados Oracle e documentação abrangente via Swagger, 
+    a aplicação está pronta para ser utilizada e expandida conforme necessário.
 
     
 
