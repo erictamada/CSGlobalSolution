@@ -90,7 +90,7 @@ Acreditamos ser uma ideia inovadora e que chamará muitas pessoas de diversas id
 
 ### Endpoints da API
 
-    **Usuários:**
+    Usuários:
     
     - GET /api/Usuarios - Retorna todos os usuários.
     
@@ -102,7 +102,8 @@ Acreditamos ser uma ideia inovadora e que chamará muitas pessoas de diversas id
     
     - DELETE /api/Usuarios/{id} - Exclui um usuário específico pelo ID.
 
-    ##Lixeiras:
+
+    Lixeiras:
 
     - GET /api/Lixeiras - Retorna todas as lixeiras.
     
@@ -114,7 +115,8 @@ Acreditamos ser uma ideia inovadora e que chamará muitas pessoas de diversas id
     
     - DELETE /api/Lixeiras/{id} - Exclui uma lixeira específica pelo ID.
 
-    ##Pontos:
+
+    Pontos:
 
     - GET /api/Lixeiras - Retorna todas as lixeiras.
     
@@ -126,7 +128,8 @@ Acreditamos ser uma ideia inovadora e que chamará muitas pessoas de diversas id
     
     - DELETE /api/Lixeiras/{id} - Exclui uma lixeira específica pelo ID.
 
-    ##Itens da Lixeira:
+
+    Itens da Lixeira:
 
     - GET /api/ItensLixeira - Retorna todos os itens das lixeiras.
     
@@ -139,7 +142,7 @@ Acreditamos ser uma ideia inovadora e que chamará muitas pessoas de diversas id
     - DELETE /api/ItensLixeira/{id} - Exclui um item específico pelo ID.
 
 
-###Conclusão
+### Conclusão
 
     O projeto CleanWave API proporciona uma solução completa para a gestão de lixeiras inteligentes, incentivando a reciclagem e a conscientização ambiental. Com uma arquitetura bem definida, integração com banco de dados Oracle e documentação abrangente via Swagger, a aplicação está pronta para ser      utilizada e expandida conforme necessário.
 
