@@ -16,14 +16,14 @@ namespace GlobalSolutionCS.Controllers
 			_context = context;
 		}
 
-		// GET: api/Lixeiras
+		// Método GET -> api/Lixeiras
 		[HttpGet]
 		public async Task<ActionResult<IEnumerable<Lixeira>>> GetLixeiras()
 		{
 			return await _context.Lixeiras.Include(l => l.Itens).ToListAsync();
 		}
 
-		// GET: api/Lixeiras/{id}
+		// Método GET -> api/Lixeiras/{id}
 		[HttpGet("{id}")]
 		public async Task<ActionResult<Lixeira>> GetLixeira(int id)
 		{
@@ -37,7 +37,7 @@ namespace GlobalSolutionCS.Controllers
 			return lixeira;
 		}
 
-		// POST: api/Lixeiras
+		// Método POST -> api/Lixeiras
 		[HttpPost]
 		public async Task<ActionResult<Lixeira>> PostLixeira(Lixeira lixeira)
 		{
@@ -48,7 +48,7 @@ namespace GlobalSolutionCS.Controllers
 
 			foreach (var item in lixeira.Itens)
 			{
-				item.LixeiraId = lixeira.Id;  // Vincula o item à lixeira
+				item.LixeiraId = lixeira.Id;  // Aqui estamos vinculando item a lixeira
 			}
 
 			_context.Lixeiras.Add(lixeira);
@@ -57,7 +57,7 @@ namespace GlobalSolutionCS.Controllers
 			return CreatedAtAction(nameof(GetLixeira), new { id = lixeira.Id }, lixeira);
 		}
 
-		// PUT: api/Lixeiras/{id}
+		// Método PUT -> api/Lixeiras/{id}
 		[HttpPut("{id}")]
 		public async Task<IActionResult> PutLixeira(int id, Lixeira lixeira)
 		{
@@ -87,7 +87,7 @@ namespace GlobalSolutionCS.Controllers
 			return NoContent();
 		}
 
-		// DELETE: api/Lixeiras/{id}
+		// Método DELETE -> api/Lixeiras/{id}
 		[HttpDelete("{id}")]
 		public async Task<IActionResult> DeleteLixeira(int id)
 		{
