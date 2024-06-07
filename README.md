@@ -33,7 +33,7 @@ Acreditamos ser uma ideia inovadora e que chamará muitas pessoas de diversas id
    
    abra o Bash
    
-   git clone https://github.com/seu-usuario/CleanWaveAPI.git
+   git clone https://github.com/erictamada/CSGlobalSolution.git
    
    cd CleanWaveAPI
 
