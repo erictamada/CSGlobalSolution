@@ -38,6 +38,7 @@ Acreditamos ser uma ideia inovadora e que chamará muitas pessoas de diversas id
    cd CleanWaveAPI
 
 
+
 2. **Configuração do Banco de Dados:**
 
     Certifique-se de que o banco de dados Oracle está instalado e em execução, no nosso caso, usamos o SQLDEVELOPER para a integração ao database.
@@ -45,7 +46,8 @@ Acreditamos ser uma ideia inovadora e que chamará muitas pessoas de diversas id
     Crie um usuário e um esquema para o projeto.
    
 
-4. **Configuração da String de Conexão ao Banco de Dados da Oracle**
+
+3. **Configuração da String de Conexão ao Banco de Dados da Oracle**
 
    Vamos editar o arquivo appsettings.json com as credenciais do banco de dados Oracle:
    
@@ -63,7 +65,8 @@ Acreditamos ser uma ideia inovadora e que chamará muitas pessoas de diversas id
       }
 
 
-5. **Agora vamos aplicar as Migrations!**
+
+4. **Agora vamos aplicar as Migrations!**
    
       No Package Manager Console do Visual Studio, vamos executar os seguintes comandos:
    
@@ -72,11 +75,13 @@ Acreditamos ser uma ideia inovadora e que chamará muitas pessoas de diversas id
       Update-Database
 
 
-6. **Por fim executaremos a aplicação :)**
+
+5. **Por fim executaremos a aplicação :)**
 
      No Visual Studio, selecionaremos a opção de execução 'CleanWaveAPI'.
 
      Assim, a nossa aplicação será iniciada abrindo o Swagger no 'https://localhost:5001/swagger'.
+
 
 
 ## Estrutura do Projeto CleanWave
