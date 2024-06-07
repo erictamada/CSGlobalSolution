@@ -39,8 +39,25 @@ Acreditamos ser uma ideia inovadora e que chamará muitas pessoas de diversas id
 
 2. **Configuração do Banco de Dados:**
 
-  Certifique-se de que o banco de dados Oracle está instalado e em execução, no nosso caso, usamos o SQLDEVELOPER para a integração ao database.
+    Certifique-se de que o banco de dados Oracle está instalado e em execução, no nosso caso, usamos o SQLDEVELOPER para a integração ao database.
 
-  Crie um usuário e um esquema para o projeto.
+    Crie um usuário e um esquema para o projeto.
+
+3. **Configuração da String de Conexão ao Banco de Dados da Oracle**
+
+   Edite o arquivo appsettings.json com as credenciais do banco de dados Oracle:
+   
+      {
+        "ConnectionStrings": {
+          "OracleDbConnection": "Data Source=SeuOracleDB/orcl;User Id=SeuUserID; Password=SuaSenha;"
+        },
+        "Logging": {
+          "LogLevel": {
+            "Default": "Information",
+            "Microsoft.AspNetCore": "Warning"
+          }
+        },
+        "AllowedHosts": "*"
+      }
 
 
