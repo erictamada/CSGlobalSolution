@@ -16,14 +16,14 @@ namespace GlobalSolutionCS.Controllers
 			_context = context;
 		}
 
-		// GET: api/Pontos
+		// Método GET -> api/Pontos
 		[HttpGet]
 		public async Task<ActionResult<IEnumerable<Pontos>>> GetPontos()
 		{
 			return await _context.Pontos.Include(p => p.Usuario).ToListAsync();
 		}
 
-		// GET: api/Pontos/{id}
+		// Método GET -> api/Pontos/{id}
 		[HttpGet("{id}")]
 		public async Task<ActionResult<Pontos>> GetPonto(int id)
 		{
@@ -37,7 +37,7 @@ namespace GlobalSolutionCS.Controllers
 			return ponto;
 		}
 
-		// POST: api/Pontos
+		// Método POST -> api/Pontos
 		[HttpPost]
 		public async Task<ActionResult<Pontos>> PostPonto(Pontos ponto)
 		{
@@ -52,7 +52,7 @@ namespace GlobalSolutionCS.Controllers
 			return CreatedAtAction(nameof(GetPonto), new { id = ponto.Id }, ponto);
 		}
 
-		// PUT: api/Pontos/{id}
+		// Método PUT -> api/Pontos/{id}
 		[HttpPut("{id}")]
 		public async Task<IActionResult> PutPonto(int id, Pontos ponto)
 		{
@@ -82,7 +82,7 @@ namespace GlobalSolutionCS.Controllers
 			return NoContent();
 		}
 
-		// DELETE: api/Pontos/{id}
+		// Método DELETE -> api/Pontos/{id}
 		[HttpDelete("{id}")]
 		public async Task<IActionResult> DeletePonto(int id)
 		{
