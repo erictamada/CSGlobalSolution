@@ -110,6 +110,8 @@ Acreditamos ser uma ideia inovadora e que chamará muitas pessoas de diversas id
     
     - DELETE /api/Usuarios/{id} - Exclui um usuário específico pelo ID.
 
+    ![image](https://github.com/erictamada/CSGlobalSolution/assets/136273097/c7258999-dc64-4168-bc57-b524735b185b)
+
 
     Lixeiras:
 
@@ -122,6 +124,8 @@ Acreditamos ser uma ideia inovadora e que chamará muitas pessoas de diversas id
     - PUT /api/Lixeiras/{id} - Atualiza uma lixeira existente.
     
     - DELETE /api/Lixeiras/{id} - Exclui uma lixeira específica pelo ID.
+
+    ![image](https://github.com/erictamada/CSGlobalSolution/assets/136273097/7ffd3c7d-d2ef-4f57-8e87-43be72e8b6c4)
 
 
     Pontos:
@@ -136,6 +140,8 @@ Acreditamos ser uma ideia inovadora e que chamará muitas pessoas de diversas id
     
     - DELETE /api/Lixeiras/{id} - Exclui uma lixeira específica pelo ID.
 
+    ![image](https://github.com/erictamada/CSGlobalSolution/assets/136273097/45ebefd5-49a5-4961-93d2-67f285cb13ec)
+
 
     Itens da Lixeira:
 
@@ -148,6 +154,9 @@ Acreditamos ser uma ideia inovadora e que chamará muitas pessoas de diversas id
     - PUT /api/ItensLixeira/{id} - Atualiza um item existente.
     
     - DELETE /api/ItensLixeira/{id} - Exclui um item específico pelo ID.
+
+    ![image](https://github.com/erictamada/CSGlobalSolution/assets/136273097/d7eebc4c-1c00-4ffc-a3a8-22839e5ed727)
+
 
 
 ### Conclusão
