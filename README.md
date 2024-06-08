@@ -35,7 +35,7 @@ Acreditamos ser uma ideia inovadora e que chamará muitas pessoas de diversas id
    
    git clone https://github.com/erictamada/CSGlobalSolution.git
    
-   cd CleanWaveAPI
+   cd CSGlobalSolution
 
 
 
@@ -82,6 +82,9 @@ Acreditamos ser uma ideia inovadora e que chamará muitas pessoas de diversas id
 
      Assim, a nossa aplicação será iniciada abrindo o Swagger no 'https://localhost:5001/swagger'.
 
+     Ficará assim:
+
+![image](https://github.com/erictamada/CSGlobalSolution/assets/136273097/99046da3-925c-42a3-8e63-34196f6dbde0)
 
 
 ## Estrutura do Projeto CleanWave
