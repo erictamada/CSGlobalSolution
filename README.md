@@ -158,6 +158,15 @@ Acreditamos ser uma ideia inovadora e que chamará muitas pessoas de diversas id
     a aplicação está pronta para ser utilizada e expandida conforme necessário.
 
     
+## Integrantes do Grupo
+
+    RM97160 - Thomaz Bernardes
+    
+    RM97316 - Eric Tamada
+    
+    RM96696 - Kauã Menezes
+    
+    RM97027 - Igor Carvalho
 
 
 
